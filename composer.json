@@ -1,0 +1,40 @@
+{
+	"name": "sniper/fontawesome",
+	"type": "phpbb-extension",
+	"description": "Adds Font Awesome BBCode to posting.",
+	"homepage": "http://sniper-e.com",
+	"version": "1.0.0",
+	"time": "2019-08-01",
+	"keywords": [
+		"phpbb",
+		"extension",
+		"fa",
+		"font",
+		"awesome"
+	],
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "Sniper_E",
+			"homepage": "http://sniper-e.com",
+			"role": "Extension Developer"
+		},
+		{
+			"name": "Martin",
+			"homepage": "https://www.martins-phpbb.com/",
+			"role": "Extension Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.3.3"
+	},
+	"require-dev": {
+		"phpbb/epv": "dev-master"
+	},
+	"extra": {
+		"display-name": "Font Awesome BBCode",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.1.0,<3.3"
+		}
+	}
+}

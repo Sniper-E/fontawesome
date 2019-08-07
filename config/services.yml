@@ -1,0 +1,10 @@
+services:
+    sniper.fontawesome.listener:
+        class: sniper\fontawesome\event\listener
+        arguments:
+            - '@user'
+            - '@template'
+            - '@auth'
+            - '@config'
+        tags:
+            - { name: event.listener }

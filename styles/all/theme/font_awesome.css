@@ -1,0 +1,37 @@
+/**
+* @package phpBB Extension - Font Awesome BBCode
+* @copyright (c) 2019 Sniper_E - http://sniper-e.com
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
+*/
+
+/** posted icons */
+i.awesome_icon {
+	font-size: 20px;
+	background-image: linear-gradient(to top, green, orange, red) !important;
+	-webkit-background-clip: text;
+	color: transparent;
+	vertical-align: top;
+}
+
+/** icon selections box */
+#font_awesome_selections {
+	padding: 0 1%;
+}
+
+/** icon selections */
+i.awsome-icon {
+	font-size: 14.5px;
+	margin-bottom: 10px;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+/** Advanced BBCode Box fa icon */
+.abbc3_button {	
+	background-image:  url("./images/fa.gif");
+}
+
+/** Posting Buttons fa icon */
+.postingbuttons {	
+	background-image:  url("./images/fa.png");
+}

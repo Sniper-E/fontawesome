@@ -1,0 +1,7 @@
+<div id="font_awesome_selections" style="display: none">
+	<div class="inner">
+		{% for awesome in awesome %}
+		<a onclick="insert_text('[fa]{awesome.ICON_NAME}[/fa]');document.getElementById('font_awesome_selections').style.display = 'none';return false;" title="fa-{awesome.ICON_NAME}"><i class="icon fa-{awesome.ICON_NAME} fa-fw awsome-icon" aria-hidden="true"></i></a>
+		{% endfor %}
+	</div>
+</div>
