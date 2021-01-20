@@ -2,7 +2,7 @@
 
 ## Install
 1. Download the latest release and unzip the downloaded release.
-2. In the `ext` directory of your phpBB board, copy the `font_awesome` folder to `/ext/sniper/`
+2. In the `ext` directory of your phpBB board, copy the `fontawesome` folder to `/ext/sniper/`
 3. Navigate in the ACP to `Customise -> Manage extensions`.
 4. Look for `Font Awesome BBCode` under the Disabled Extensions list, and click its `Enable` link.
 
