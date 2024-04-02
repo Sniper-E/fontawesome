@@ -1,15 +1,25 @@
 # Font Awesome BBCode
+# Version 1.0.6
 
-## Install
-1. Download the latest release and unzip the downloaded release.
-2. In the `ext` directory of your phpBB board, copy the `fontawesome` folder to `/ext/sniper/`
-3. Navigate in the ACP to `Customise -> Manage extensions`.
-4. Look for `Font Awesome BBCode` under the Disabled Extensions list, and click its `Enable` link.
+## Discription
+Adds Font Awesome BBCode to posting.
 
-## Uninstall
-1. Navigate in the ACP to `Customise -> Extension Management -> Extensions`.
-2. Look for `Font Awesome BBCode` under the Enabled Extensions list, and click its `Disable` link.
-3. To permanently uninstall, click `Delete Data` and then delete the `/ext/sniper/font_awesome` folder.
+## Developers
+<strong>(Sniper_E - [sniper-e.com](https://www.sniper-e.com)) & (dmzx - [dmzx-web.net](https://www.dmzx-web.net)) & (martin - [martins-phpbb.com](https://www.martins-phpbb-test.com))
+
+## Install...
+1. In the `root/ext/` directory of your phpBB board, create a new directory named `sniper/`
+2. Copy the `fontawesome/` folder into server `root/ext/sniper/` directory.
+3. Navigate to `ACP -> Customise -> Disabled Extensions ->  Font Awesome BBCode` and click `Enable`
+
+## Update...
+1. Navigate to `ACP -> Customise -> Enabled Extensions ->  Font Awesome BBCode` and click `Disable` click `Delete Data`
+2. Copy the updated `fontawesome/` folder into server `root/ext/sniper/` directory, over write files.
+3. Navigate to `ACP -> Customise -> Disabled Extensions ->  Font Awesome BBCode` and click `Enable`
+
+## Uninstall..
+1. Navigate to `ACP -> Customise -> Enabled Extensions / Font Awesome BBCode` and click `Disable` and `Delete Data`
+2. To permanently uninstall, folder `/ext/sniper/fontawesome`
 
 ## License
 [GNU General Public License v2](http://opensource.org/licenses/GPL-2.0)

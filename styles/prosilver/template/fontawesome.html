@@ -1,0 +1,40 @@
+{% INCLUDE 'simple_header.html' %}
+<script>
+	var form_name = opener.form_name;
+	var text_name = opener.text_name;
+</script>
+
+<div class="forabg">
+	<div class="inner">
+		<ul class="topiclist">
+			<li class="header">
+				<dl class="row-item">
+					<dt style="width: 100%"><img src="https://img.shields.io/badge/Font Awesome BBCode-Version {{ FONTAWESOME_VERSION }}-green.svg?style=plastic" style="margin-left: 20px" /></dt>
+					<dd class="fontawesome-hint">{{ lang('FONT_AWESOME_HINT') }} <img src="https://img.shields.io/badge/Font Awesome 4.7.0-718 Awesome Icons-red.svg?style=plastic" /></dd>
+				</dl>
+			</li>
+		</ul>
+		<ul class="topiclist forums fontawesome">
+			{% for fontawesome in loops.fontawesome %}
+			<div class="fontawesome-icon panel">
+				<a onclick="window.close(); opener.insert_text('[fa]{{ fontawesome.ICON_NAME }}[/fa]', true, false)" title="fa-{{ fontawesome.ICON_NAME }}">
+					<i class="icon fa-{{ fontawesome.ICON_NAME }} fa-fw awesome-icon" aria-hidden="true"></i>
+					{% if FONTAWESOME_TEXT %}<br />{{ fontawesome.ICON_NAME }}{% endif %}
+				</a>
+			</div>
+			{% endfor %} 
+		</ul>
+	</div>
+</div>
+
+<div class="action-bar bottom">
+	{% if loops.pagination|length %}
+	<div class="pagination">
+		{{ FONTAWESOME_ICONS }}
+		{% INCLUDE 'pagination.html' %}
+	</div>
+	{% endif %}
+	<a class="button" onclick="window.close(); return false;">{{ lang('CLOSE_WINDOW') }}</a>
+</div>
+
+{% INCLUDE 'simple_footer.html' %}

@@ -1,10 +1,37 @@
+imports:
+    - { resource: tables.yml }
 services:
+    sniper.fontawesome.controller:
+        class: sniper\fontawesome\controller\fontawesome
+        arguments:
+            - '@template'
+            - '@user'
+            - '@auth'
+            - '@dbal.conn'
+            - '@request'
+            - '@pagination'
+            - '@controller.helper'
+            - '@config'
+            - '%sniper.fontawesome.table.fontawesome%'
     sniper.fontawesome.listener:
         class: sniper\fontawesome\event\listener
         arguments:
-            - '@user'
-            - '@template'
             - '@auth'
+            - '@template'
+            - '@ext.manager'
+            - '@user'
+            - '@dbal.conn'
+            - '@request'
             - '@config'
+            - '@controller.helper'
         tags:
             - { name: event.listener }
+    sniper.fontawesome.admin.controller:
+        class: sniper\fontawesome\controller\admin_controller
+        arguments:
+            - '@template'
+            - '@user'
+            - '@auth'
+            - '@request'
+            - '@config'
+            - '@log'

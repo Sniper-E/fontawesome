@@ -2,26 +2,36 @@
 	"name": "sniper/fontawesome",
 	"type": "phpbb-extension",
 	"description": "Adds Font Awesome BBCode to posting.",
-	"homepage": "http://sniper-e.com",
-	"version": "1.0.0",
-	"time": "2019-08-01",
+	"homepage": "https://www.sniper-e.net",
+	"version": "1.0.9",
+	"time": "2019-09-12",
 	"keywords": [
 		"phpbb",
 		"extension",
 		"fa",
 		"font",
-		"awesome"
+		"awesome",
+		"fontawesome"
 	],
 	"license": "GPL-2.0",
 	"authors": [
 		{
 			"name": "Sniper_E",
-			"homepage": "http://sniper-e.com",
+			"sitename": "Sniper_E Styles",
+			"homepage": "https://www.sniper-e.com",
 			"role": "Extension Developer"
 		},
 		{
 			"name": "Martin",
-			"homepage": "https://www.martins-phpbb.com/",
+			"sitename": "Martins-playground",
+			"homepage": "https://www.martins-play-ground.com",
+			"role": "Extension Developer"
+		},
+		{
+			"name": "dmzx",
+			"sitename": "Dmzx-web",
+			"homepage": "https://www.dmzx-web.net",
+			"email": "info@dmzx-web.net",
 			"role": "Extension Developer"
 		}
 	],
@@ -32,9 +42,15 @@
 		"phpbb/epv": "dev-master"
 	},
 	"extra": {
-		"display-name": "Font Awesome BBCode",
+		"display-name": "Font Awesome",
 		"soft-require": {
 			"phpbb/phpbb": ">=3.1.0,<3.3"
+		},
+		"version-check": {
+			"host": "www.sniper-e.com",
+			"directory": "/versions",
+			"filename": "fontawesome_version.json",
+			"ssl": true
 		}
 	}
 }

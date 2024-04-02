@@ -1,0 +1,2 @@
+parameters:
+    sniper.fontawesome.table.fontawesome: '%core.table_prefix%fontawesome'

@@ -1,0 +1,55 @@
+/**
+* @package phpBB Extension - Font Awesome BBCode
+* @copyright (c) 2019 Sniper_E - http://sniper-e.com
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
+*/
+
+/** Fa icon images */
+#ab_font_awesome{background-image:url("./images/fa.gif")}
+#pb_font_awesome{background-image:url("./images/fa.png")}
+
+
+/** Icon line-height, font sizes */
+.icon.awesome_icon{line-height: 1.2em}
+.icon.fa-2x,.icon.fa-3x,.icon.fa-4x,.icon.fa-5x{line-height: 1.3em}
+.icon.fa-2x{font-size:2em !important}
+.icon.fa-3x{font-size:3em !important}
+.icon.fa-4x{font-size:4em !important}
+.icon.fa-5x{font-size:5em !important}
+
+/** Color rainbow */
+.icon.icon-rainbow{background-image:linear-gradient(to bottom,red,orange,green) !important;-webkit-background-clip:text;color:transparent}
+.icon.icon-white{color:#fff}
+
+/** Icon effects wobble,fade,spin,pulse,rotate,blink,bounce,shake,border */
+.icon.fa-wobble{-webkit-animation:fa-wobble .5s infinite ease-in-out alternate;animation:fa-wobble .5s infinite ease-in-out alternate}
+@-webkit-keyframes fa-wobble{from{transform:rotate(-10deg);rotate(-10deg)}to{transform:rotate(10deg)}}
+@keyframes fa-wobble{from{transform:rotate(-10deg);rotate(-10deg)}to{transform:rotate(10deg)}}
+
+.icon.fa-fade{-webkit-animation:fa-fade 1.5s infinite ease-in-out alternate;animation:fa-fade 1.5s infinite ease-in-out alternate}
+@-webkit-keyframes fa-fade{from{opacity:1.0}to{opacity: 0.0}}
+@keyframes fa-fade{from{opacity: 1.0}to{opacity: 0.0}}
+
+.icon.fa-rotate{-webkit-animation:fa-rotate 3s infinite linear;animation:fa-rotate 3s infinite linear}
+@-webkit-keyframes fa-rotate{0%{-webkit-transform:scale(-1, 1);-ms-transform:scale(-1, 1);transform:rotate(-1, 1)}50%{-webkit-transform:scale(1, 1);-ms-transform:scale(1, 1);transform:rotate(1, 1)}100%{-webkit-transform:scale(-1, 1);-ms-transform:scale(-1, 1);transform:rotate(-1, 1)}}
+@keyframes fa-rotate{0%{-webkit-transform:scale(-1, 1);-ms-transform:scale(-1, 1);transform:rotate(-1, 1)}50%{-webkit-transform:scale(1, 1);-ms-transform:scale(1, 1);transform:rotate(1, 1)}100%{-webkit-transform:scale(-1, 1);-ms-transform:scale(-1, 1);transform:rotate(-1, 1)}}
+
+.icon.fa-blink{-webkit-animation:fa-blink 1.5s infinite linear;animation:fa-blink 1.5s infinite linear}
+@-webkit-keyframes fa-blink{0%{opacity: 10}75%{opacity: 10}76%{opacity:0}100%{opacity:0}}
+@keyframes fa-blink{0%{opacity:10}75%{opacity:10}76%{opacity:0}100%{opacity: 0}}
+
+.icon.fa-bounce{-webkit-animation:fa-bounce 1s infinite linear;animation:fa-bounce 1s infinite linear}
+@-webkit-keyframes fa-bounce{0%{margin:1px 0 -1px}75%{margin: -1px 0 1px}85%{margin: -1px 0 1px}100%{margin:1px 0 -1px}}
+@keyframes fa-bounce{0%{margin:1px 0 -1px}75%{margin:-1px 0 1px}85%{margin:-1px 0 1px}100%{margin:1px 0 -1px}}
+
+.icon.fa-shake{-webkit-animation:fa-shake .2s infinite linear;animation:fa-shake .2s infinite linear}
+@-webkit-keyframes fa-shake{0%{margin:0 -1px 0 1px}50%{margin:0 1px 0 -1px}100%{margin:0 -1px 0 1px}}
+@keyframes fa-shake{0%{margin:0 -1px 0 1px}50%{margin:0 1px 0 -1px}100%{margin:0 -1px 0 1px}}
+
+/** */ .icon.fa-spin{padding:.04% 0 .02%}
+.icon.fa-pulse{padding:.1% 0 0 .14%}
+.icon.fa-border{padding:2px .2% 0;margin:0 5px;border:solid .05em;border-radius:.2em}
+
+/** icon=pulse [fa size=5x icon=pulse]spinner[/fa] [fa size=5x icon=pulse]circle-o-notch[/fa] icon=spin [fa size=5x icon=spin]spinner[/fa] [fa size=5x icon=spin]circle-o-notch[/fa]
+icon pulse <i aria-hidden="true" class="icon fa-spinner fa-fw awesome_icon fa-3x fa-pulse"></i> <i aria-hidden="true" class="icon fa-circle-o-notch fa-fw awesome_icon fa-3x fa-pulse"></i> icon=spin <i aria-hidden="true" class="icon fa-spinner fa-fw awesome_icon fa-3x fa-spin"></i> <i aria-hidden="true" class="icon fa-circle-o-notch fa-fw awesome_icon fa-3x fa-spin"></i>
+*/

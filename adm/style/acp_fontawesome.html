@@ -1,0 +1,80 @@
+{% INCLUDE 'overall_header.html' %}
+
+<div id="unique_fontawesome">{{ lang('FONTAWESOME_HELP') }}</div>
+
+<h1>{{ lang('ACP_FONTAWESOME_TITLE') }}</h1>
+
+<p><img src="https://img.shields.io/badge/{{ lang('Version') }}-{{ FONTAWESOME_VERSION }}-green.svg?style=plastic" /> <img src="https://img.shields.io/badge/{{ lang('FONTAWESOME_VERSION') }}-{{ lang('FONTAWESOME_ICONS') }}-red.svg?style=plastic" /></p>
+
+<form id="acp_fontawesome" method="post" action="{{ U_ACTION }}">
+	<fieldset>
+		<legend class="button1"><i class="icon fa-cog awesome-icon fa-lg" aria-hidden="true"></i> {{ lang('ACP_FONTAWESOME_SETTINGS') }}</legend>
+		<dl>
+			<dt>
+				<label for="fontawesome_allow">{{ lang('FONTAWESOME_ALLOW') }}{{ lang('COLON') }}</label><br />
+				<span>{{ lang('FONTAWESOME_ALLOW_EXPLAIN') }}</span>
+			</dt>
+			<dd>
+				<label><input type="radio" id="fontawesome_allow" class="radio" name="fontawesome_allow" value="1"{% if FONTAWESOME_ALLOW %} checked="checked"{% endif %} title="{{ lang('FONTAWESOME_ALLOW') }}" /> {{ lang('FONTAWESOME_ACTIVATE') }}</label>
+				<label><input type="radio" class="radio" name="fontawesome_allow" value="0"{% if not FONTAWESOME_ALLOW %} checked="checked"{% endif %} title="{{ lang('FONTAWESOME_DENY') }}" /> {{ lang('FONTAWESOME_DEACTIVATE') }}</label>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label>{{ lang('FONTAWESOME_COLOR') }}{{ lang('COLON') }}</label><br />{{ lang('FONTAWESOME_COLOR_EXPLAIN') }}
+			</dt>
+			<dd>
+				<input type="text" name="fontawesome_color" value="{{ FONTAWESOME_COLOR }}" title="{{ lang('FONTAWESOME_COLOR') }}" size="100%" />
+			</dd>
+		</dl>
+	</fieldset>
+	<fieldset>
+		<legend><i class="icon fa-stack-overflow awesome-icon fa-lg" aria-hidden="true"></i> {{ lang('FONTAWESOME_POPUP') }}</legend>
+		<dl>
+			<dt>
+				<label>{{ lang('FONTAWESOME_VALUE') }}{{ lang('COLON') }}</label><br />{{ lang('FONTAWESOME_VALUE_EXPLAIN') }}
+			</dt>
+			<dd>
+				<input type="number" name="fontawesome_value" value="{{ FONTAWESOME_VALUE }}" min="90" max="718" title="{{ lang('FONTAWESOME_VALUE') }}" style="text-align:center;" /> {{ lang('FONTAWESOME_PER') }}
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label>{{ lang('FONTAWESOME_WIDTH') }}{{ lang('COLON') }}</label><br />{{ lang('FONTAWESOME_WIDTH_EXPLAIN') }}
+			</dt>
+			<dd>
+				<input type="number" name="fontawesome_width" value="{{ FONTAWESOME_WIDTH }}" min="350" max="1920" title="{{ lang('FONTAWESOME_WIDTH') }}" style="text-align:center;" /> {{ lang('FONTAWESOME_PX_WIDTH') }}
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label>{{ lang('FONTAWESOME_HEIGHT') }}{{ lang('COLON') }}</label><br />{{ lang('FONTAWESOME_HEIGHT_EXPLAIN') }}
+			</dt>
+			<dd>
+				<input type="number" name="fontawesome_height" value="{{ FONTAWESOME_HEIGHT }}" min="250" max="1080" title="{{ lang('FONTAWESOME_HEIGHT') }}" style="text-align:center;" /> {{ lang('FONTAWESOME_PX_HEIGHT') }}
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="fontawesome_text">{{ lang('FONTAWESOME_TEXT') }}{{ lang('COLON') }}</label><br />
+				<span>{{ lang('FONTAWESOME_TEXT_EXPLAIN') }}</span>
+			</dt>
+			<dd>
+				<label><input type="radio" id="fontawesome_text" class="radio" name="fontawesome_text" value="1"{% if FONTAWESOME_TEXT %} checked="checked"{% endif %} title="{{ lang('YES') }}" /> {{ lang('YES') }}</label>
+				<label><input type="radio" class="radio" name="fontawesome_text" value="0"{% if not FONTAWESOME_TEXT %} checked="checked"{% endif %} title="{{ lang('NO') }}" /> {{ lang('NO') }}</label>
+			</dd>
+		</dl>
+	</fieldset>
+	<fieldset>
+		<legend><i class="icon fa-check-circle awesome-icon fa-lg" style="font-size: 16px" aria-hidden="true"></i> {{ lang('SUBMIT_CHANGES') }}</legend>
+		<dl>
+			<dt></dt>
+			<dd>
+				<input class="awesome-icon button1" type="submit" id="submit" name="submit" value="{{ lang('SUBMIT') }}" title="{{ lang('SUBMIT_CHANGES') }}" />
+			</dd>
+		</dl>
+	</fieldset>
+	{{ S_FORM_TOKEN }}
+</form>
+
+{% INCLUDE 'overall_footer.html' %}

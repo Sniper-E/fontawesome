@@ -1,0 +1,6 @@
+{% if U_USE_FONT_AWESOME_BBCODE && S_BBCODE_ALLOWED %}
+	<button type="button" onclick="popup_iconcenter('./app.php/fontawesome', {{ FONTAWESOME_WIDTH }}, {{ FONTAWESOME_HEIGHT }}, '_fontawesome'); return false;" class="button button-icon-only" name="font_awesome" value="&#160;" title="{{ lang('FONT_AWESOME_HELP') }}
+{{ lang('FONT_AWESOME_ICONS') }}{{ lang('COLON') }} {{ FONTAWESOME_VALUE }} &bull; {{ lang('FONT_AWESOME_POPUP') }}{{ lang('COLON') }} {{ FONTAWESOME_WIDTH }}{{ lang('FONTAWESOME_PX') }} &times; {{ FONTAWESOME_HEIGHT }}{{ lang('FONTAWESOME_PX') }}">
+		<i class="icon fa-fa fa-fw" aria-hidden="true"></i>
+	</button>
+{% endif %}

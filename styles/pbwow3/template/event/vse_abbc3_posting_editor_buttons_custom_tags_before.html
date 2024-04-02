@@ -1,0 +1,4 @@
+{% if U_USE_FONT_AWESOME_BBCODE && S_BBCODE_ALLOWED %}
+	<input type="button" class="abbc3_button" id="ab_font_awesome" name="ab_font_awesome" value="&#160;" onclick="popup_iconcenter('./app.php/fontawesome', {{ FONTAWESOME_WIDTH }}, {{ FONTAWESOME_HEIGHT }}, '_fontawesome'); return false;" title="{{ lang('FONT_AWESOME_HELP') }}
+{{ lang('FONT_AWESOME_ICONS') }}{{ lang('COLON') }} {{ FONTAWESOME_VALUE }} &bull; {{ lang('FONT_AWESOME_POPUP') }}{{ lang('COLON') }} {{ FONTAWESOME_WIDTH }}{{ lang('FONTAWESOME_PX') }} &times; {{ FONTAWESOME_HEIGHT }}{{ lang('FONTAWESOME_PX') }}" />
+{% endif %}

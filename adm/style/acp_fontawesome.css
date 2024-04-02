@@ -1,0 +1,53 @@
+/** Popup icon selections */
+i.awesome-icon {font-size: 20px;cursor: pointer;}
+.fontawesome-icon {display: inline-block;padding: 4px;margin: 3px;border-radius: 7px}
+dd.fontawesome-hint {font-size: 12px !important;text-transform: none !important}
+.topiclist.fontawesome {padding: 4px 0;text-align: center}
+.action-bar .pagination {margin: -8px 3px 8px 0}
+input.awesome-icon.button1 {border-color: #115098;border-radius: 7px;color: #115098}
+input.awesome-icon.button1:hover {background: #115098;color: white}
+
+/** Acp fa settings page */
+#acp_fontawesome fieldset {border-radius: 15px;box-shadow: 2px 2px #ccc}
+#acp_fontawesome legend {top: 0.10em;width: auto;border-radius: 15px;border: 1px solid #d7d7d7;background-color: #ffffff;padding: 3px 8px 5px;box-shadow: 2px 3px 0 0 #999}
+.fahelp {float: right;font-size: 0.9em;font-weight: bold;margin-right: 3px;border-top: 1px solid #d7d7d7;border-radius: 15px;padding: 6px 12px;box-shadow: 3px 3px 0 0 #ccc}
+.fahelp-var {color: darkorange}
+
+/** Fa icon images */
+#ab_font_awesome {background-image:  url("./images/fa.gif");}
+#pb_font_awesome {background-image:  url("./images/fa.png");}
+
+/** Icon Sizes 2x,3x,4x,5x */
+.icon.fa-2x{font-size:2em !important;line-height: 1.1}
+.icon.fa-3x{font-size:3em !important;line-height: 1.15}
+.icon.fa-4x{font-size:4em !important;line-height: 1.15}
+.icon.fa-5x{font-size:5em !important;line-height: 1.2}
+
+/** Color rainbow */
+.icon.icon-rainbow{background-image:linear-gradient(to bottom,red,orange,green) !important;-webkit-background-clip:text;color:transparent}
+.icon.icon-white{color:#fff}
+
+/** Added icon effects wobble,fade,rotate,blink,bounce,shake */
+.icon.fa-wobble{-webkit-animation:fa-wobble .5s infinite ease-in-out alternate;animation:fa-wobble .5s infinite ease-in-out alternate}
+@-webkit-keyframes fa-wobble{from{transform:rotate(-10deg);rotate(-10deg)}to{transform:rotate(10deg)}}
+@keyframes fa-wobble{from{transform:rotate(-10deg);rotate(-10deg)}to{transform:rotate(10deg)}}
+
+.icon.fa-fade{-webkit-animation:fa-fade 1.5s infinite ease-in-out alternate;animation:fa-fade 1.5s infinite ease-in-out alternate}
+@-webkit-keyframes fa-fade{from{opacity:1.0}to{opacity: 0.0}}
+@keyframes fa-fade{from{opacity: 1.0}to{opacity: 0.0}}
+
+.icon.fa-rotate{-webkit-animation:fa-rotate 3s infinite linear;animation:fa-rotate 3s infinite linear}
+@-webkit-keyframes fa-rotate{0%{-webkit-transform:scale(-1, 1);-ms-transform:scale(-1, 1);transform:rotate(-1, 1)}50%{-webkit-transform:scale(1, 1);-ms-transform:scale(1, 1);transform:rotate(1, 1)}100%{-webkit-transform:scale(-1, 1);-ms-transform:scale(-1, 1);transform:rotate(-1, 1)}}
+@keyframes fa-rotate{0%{-webkit-transform:scale(-1, 1);-ms-transform:scale(-1, 1);transform:rotate(-1, 1)}50%{-webkit-transform:scale(1, 1);-ms-transform:scale(1, 1);transform:rotate(1, 1)}100%{-webkit-transform:scale(-1, 1);-ms-transform:scale(-1, 1);transform:rotate(-1, 1)}}
+
+.icon.fa-blink{-webkit-animation:fa-blink 1.5s infinite linear;animation:fa-blink 1.5s infinite linear}
+@-webkit-keyframes fa-blink{0%{opacity: 10}75%{opacity: 10}76%{opacity:0}100%{opacity:0}}
+@keyframes fa-blink{0%{opacity:10}75%{opacity:10}76%{opacity:0}100%{opacity: 0}}
+
+.icon.fa-bounce{-webkit-animation:fa-bounce 1s infinite linear;animation:fa-bounce 1s infinite linear}
+@-webkit-keyframes fa-bounce{0%{margin:1px 0 -1px}75%{margin: -1px 0 1px}85%{margin: -1px 0 1px}100%{margin:1px 0 -1px}}
+@keyframes fa-bounce{0%{margin:1px 0 -1px}75%{margin:-1px 0 1px}85%{margin:-1px 0 1px}100%{margin:1px 0 -1px}}
+
+.icon.fa-shake{-webkit-animation:fa-shake .2s infinite linear;animation:fa-shake .2s infinite linear}
+@-webkit-keyframes fa-shake{0%{margin:0 -1px 0 1px}50%{margin:0 1px 0 -1px}100%{margin:0 -1px 0 1px}}
+@keyframes fa-shake{0%{margin:0 -1px 0 1px}50%{margin:0 1px 0 -1px}100%{margin:0 -1px 0 1px}}

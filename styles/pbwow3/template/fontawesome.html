@@ -1,0 +1,34 @@
+{% INCLUDE 'simple_header.html' %}
+<script>
+	var form_name = opener.form_name;
+	var text_name = opener.text_name;
+</script>
+
+<div class="forabg">
+	<div class="inner">
+		<div class="awesome-header">{{ lang('FONTAWESOME_TITLE') }}
+		<span class="awesome-hint">{{ lang('FONT_AWESOME_HINT') }}</span></div>
+		<ul class="topiclist forums fontawesome">
+			{% for fontawesome in loops.fontawesome %}
+			<div class="fontawesome-icon panel">
+				<a onclick="window.close(); opener.insert_text('[fa]{{ fontawesome.ICON_NAME }}[/fa]', true, false)" title="fa-{{ fontawesome.ICON_NAME }}">
+					<i class="icon fa-{{ fontawesome.ICON_NAME }} fa-fw awsome-icon" aria-hidden="true"></i>
+					{% if FONTAWESOME_TEXT %}<br />{{ fontawesome.ICON_NAME }}{% endif %}
+				</a>
+			</div>
+			{% endfor %} 
+		</ul>
+	</div>
+</div>
+
+<div class="action-bar bottom">
+	{% if loops.pagination|length %}
+	<div class="pagination">
+		{{ FONTAWESOME_ICONS }}
+		{% INCLUDE 'pagination.html' %}
+	</div>
+	{% endif %}
+	<a class="button" onclick="window.close(); return false;">{{ lang('CLOSE_WINDOW') }}</a>
+</div>
+
+{% INCLUDE 'simple_footer.html' %}

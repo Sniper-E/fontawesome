@@ -1,0 +1,68 @@
+/**
+* @package phpBB Extension - Font Awesome BBCode
+* @copyright (c) 2019 Sniper_E - http://sniper-e.com
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
+*/
+
+.wrap {
+	max-width: 100% !important;
+	margin: 10px 20px !important;
+}
+
+i.awesome-icon {
+	font-size: 20px;
+	cursor: pointer;
+}
+
+div.fontawesome-icon {
+	display: inline-block;
+	padding: 4px;
+	margin: 3px;
+	border-radius: 7px;
+}
+
+.icon-name {
+	display: none !important;
+}
+
+.fontawesome-hint {
+	float: right;
+	font-size: 12px !important;
+	text-transform: none !important;
+}
+
+.topiclist.fontawesome {
+	padding: 4px 0;
+	text-align: center;
+}
+
+.action-bar .pagination {
+	margin: -8px 3px 8px 0;
+}
+
+@media (max-width: 960px) {
+	li.header dt {
+		text-align: center;
+		text-transform: none;
+		line-height: 1em;
+		font-size: 1.2em;
+		padding-bottom: 4px;
+	}
+
+	ul.topiclist li.header dt, ul.topiclist li.header dt .list-inner {
+		margin-right: 0 !important;
+		padding-right: 0;
+	}
+
+	ul.topiclist li.header dd {
+		display: none !important;
+	}
+}
+
+@media (max-width: 700px) {
+	.wrap {
+		padding: 10px 15px 0;
+		margin: 0 !important;
+		border-radius: 0;
+	}
+}
